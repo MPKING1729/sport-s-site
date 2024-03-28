@@ -1,0 +1,402 @@
+<html>
+ 
+<head>
+    <title>about us</title>
+<link rel="icon" type="image/x-icon" href="photo's/logo1.jpg">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Global Styles */
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+/* Header */
+ 
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #40b736;
+}
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li {
+    margin-right: 20px;
+}
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: #40b736;
+    border-radius: 4px;
+    color: white;
+}
+ 
+/* About Section */
+ 
+.about {
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+ 
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+.about p {
+    font-size: 1rem;
+    color: #323030;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+ 
+.about-img {
+    width: 20rem;
+    height: 20rem;
+ 
+}
+ 
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+ 
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+ 
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #40b736;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+ 
+button:hover {
+    background-color: #1f9405;
+}
+ 
+/* Team Section */
+ 
+.team {
+    padding: 30px 0;
+    text-align: center;
+}
+ 
+.team h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+ 
+.card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    width: 21rem;
+    height: 26rem;
+    margin-top: 10px;
+}
+ 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+ 
+.card-img {
+    text-align: center;
+    width: 14rem;
+    height: 12rem;
+}
+ 
+.card-img img {
+    width: 100%;
+    height: 100%;
+    
+}
+ 
+.card-info button {
+    margin: 2rem 1rem;
+}
+ 
+.card-name {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+ 
+.card-role {
+    font-size: 1rem;
+    color: #888;
+    margin: 5px 0;
+}
+ 
+.card-email {
+    font-size: 1rem;
+    color: #555;
+}
+ 
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+ 
+@media (max-width: 650px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+ 
+    .nav-links li {
+        margin-right: 0;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+ 
+    .team {
+        margin: 0 1rem;
+    }
+}
+
+
+
+
+</style>
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="photo's/logo1.jpg" height="25" width="35">&nbsp; SPORT'S SITE
+              </div>
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    back</a>
+                    </li>
+                <li><a href="index.html">
+                  Home</a>
+                  </li>
+                <li><a href="about us.html">
+                  About</a>
+                  </li>
+                <li><a href="news.html">
+                  News</a>
+                  </li>
+                <li><a href="Contact us webpage.html">
+                  Contact</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="about">
+        <h1>About Us</h1>
+        <p style="font-weight: bold">
+          Sport's site is a leading platform...
+          </p>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="photo's/logo.jpg" alt="Sport's site">
+            </div>
+            <div>
+            <p style="font-size:20px"> Welcome to Sport's site, your ultimate destination for everything sports-related!
+ Founded with a passion for sports and a vision to create a thriving online community, we are dedicated to bringing you the latest news,
+ updates, and insights from the dynamic world of sports.At Sport's site, we believe that sports transcend boundaries, bringing
+ people together and inspiring greatness. you'll find something to love here.Our team consists of passionate sports enthusiasts who eat, sleep, and breathe sports.
+ From football ,cricket ,badminton, and everything in between, we cover a wide range of sports to cater to diverse interests.
+What sets us apart is our commitment to delivering accurate, timely, and engaging content that keeps you informed and entertained. 
+Whether it's breaking news, match analyses or player interviews we strive to provide a comprehensive and 
+immersive sports experience.Join us on this exhilarating journey as we celebrate the spirit of sportsmanship, competition.
+ Whether you're looking for scores, highlights, expert opinions, or simply want to connect with fellow sports enthusiasts, 
+Sport's site is your go-to destination.Thank you for choosing Sport's site. Let's dive into the excitement of sports together!
+            </div>
+        </div>
+    </section>
+ 
+   
+        <h1 align="center">Meet Our Team</h1>
+        <div class="team-cards">
+           
+            <!-- Cards here -->
+            <!-- Card 1 -->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src="photo's/jignesh.jpg" alt="Jignesh Tathe" style="width:80%">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Jignesh Tathe</h2>
+                    <p class="card-role">Creater/Report creater</p>
+                    <p class="card-email">JigneshTathe@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+ 
+            <!-- Card 2 -->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src="photo's/mauli.jpg" alt="Mauli Patil" style="width:80%">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Mauli Patil</h2>
+                    <p class="card-role"> Creater/Designer </p>
+                    <p class="card-email">Mauli1729Patil@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+           
+             <!-- Card 3 -->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src="photo's/nutan.jpg" alt="Nutan Vankalas" style="width:80%">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Nutan Vankalas</h2>
+                    <p class="card-role">Desion making/creating team</p>
+                    <p class="card-email">NutanVankalas@gamil.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+
+             <!-- Card 4-->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src="photo's/omkar.jpg" alt="Omkar Salunkhe" style="width:80%">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Omkar Salunkhe</h2>
+                    <p class="card-role">Reporting/Designer</p>
+                    <p class="card-email">OmkarSalunkhe@gamil.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+
+
+            <!-- Card 5 -->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src="photo's/vighnesh.jpg" alt="Nagya" style="width:80%">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Vighnesh Suryawanshi</h2>
+                    <p class="card-role">group member</p>
+                    <p class="card-email">vighnesh@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    
+ 
+    <footer>
+        <p>© 2024 Sport's site. All Rights Reserved.</p>
+    </footer>
+</body>
+ 
+</html>

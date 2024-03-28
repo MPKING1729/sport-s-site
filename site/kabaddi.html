@@ -1,0 +1,438 @@
+<html>
+ 
+<head>
+    <title>Kabaddi</title>
+    <link rel="icon" type="image/x-icon" href="photo's/logo1.jpg">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 90%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+/* Header */
+ 
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #40b736;
+}
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li {
+    margin-right: 20px;
+}
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: #40b736;
+    border-radius: 4px;
+    color: white;
+}
+ 
+/* About Section */
+ .about {
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+
+img {
+  border: 12px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}
+ 
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #40b736;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+ 
+button:hover {
+    background-color: #1f9405;
+}
+ 
+/* Team Section */
+ 
+.team {
+    padding: 30px 0;
+    text-align: center;
+}
+ 
+.team h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+ 
+@media (max-width: 650px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+ 
+    .nav-links li {
+        margin-right: 0;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+ 
+    .team {
+        margin: 0 1rem;
+    }
+}
+
+
+
+
+</style>
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+              <img src="photo's/logo1.jpg" height="25" width="35">&nbsp;SPORT'S SITE
+              </div>
+            <ul class="nav-links">
+                <li><a href="index.html">
+                  Back</a>
+                <li><a href="index.html">
+                  Home</a>
+                  </li>
+                <li><a href="about us.html">
+                  About</a>
+                  </li>
+                <li><a href="news.html">
+                  News</a>
+                  </li>
+                <li><a href="Contact us webpage.html">
+                  Contact</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="about">
+        <h1 align="center">KABADDI</H1><center><br><br>
+        <p style="font-weight: bold">
+          </p>
+        <div class="row">
+            <div class="column">
+                <img src="photo's/kabaddi.jpg" alt="kabaddi" style="width:80%" vspace="60" hspace="60">
+            </div>
+            <div>
+            <p style="font-size:17px">Kabaddi is a contact team sport played between two teams of seven players,
+               originating in ancient India. The objective of the game is for a single player on offense, 
+               referred to as a "raider", to run into the opposing team's half of the court, touch out as many 
+               of their players as possible, and return to their own half of the court, all without being tackled 
+               by the defenders in 30 seconds. Points are scored for each player tagged by the raider, while the 
+               opposing team earns a point for stopping the raider. Players are taken out of the game if they are 
+               touched or tackled, but return to the game after each point scored by their team from a tag or tackle.<br>
+
+              It is popular in the Indian subcontinent and other surrounding Asian countries. Although accounts 
+              of kabaddi appear in the histories of ancient India, the game was popularised as a competitive sport 
+              in the 20th century. It is the national sport of Bangladesh. It is the second most popular and 
+              viewed sport in India after cricket. It is the state game of the Indian states of Andhra Pradesh, 
+              Bihar, Chhattisgarh, Haryana, Karnataka, Kerala, Maharashtra, Odisha, Punjab, Tamil Nadu, Telangana,
+              and Uttar Pradesh.<br>
+              
+              There are two major disciplines: "Punjabi kabaddi", also called "circle style", comprises traditional
+              forms of the sport that are played on a circular field outdoors, and the "standard style", on a 
+              rectangular court indoors, is played in major professional leagues and international competitions
+              such as the Asian Games.<br>
+              
+              This game is known by numerous names in different parts of the Indian subcontinent, such as: kabaddi
+              or chedugudu in Andhra Pradesh and Telangana; kabaddi in Maharashtra, Karnataka and Kerala; kabaddi, 
+              komonti or ha-du-du in West Bengal and Bangladesh; baibalaa in Maldives, kauddi or kabaddi in the 
+              Punjab region; hu-tu-tu in Western India, ha-do-do in Eastern India; chadakudu in South India; 
+              kapardi in Nepal; kabadi or sadugudu in Tamil Nadu; and chakgudu in Sri Lanka.
+<br><br>
+The raider is required to execute each raid on a single breath; in order to prove that they are not inhaling, they are required to repeatedly chant the word "kabaddi", in a process referred to as a cant.[7][8][b]
+
+Kabaddi is one of the many traditional Tamil sports played by Tamil people for a long time. 
+Before preparing for competitions (attacking and defending), Tamil people engage in training 
+sessions, known as Kabaddi, for a considerable period. The term Kabaddi itself remains a Tamil word. 
+In other words, it is said to be a Tamil derivation. That is, "Kai" + "Pidi" = Kabaddi.
+<br><br>
+</p>
+            </div>
+        </div>
+    </section>
+
+<ul>
+<button class="accordion"> <li>History </li></button>
+<div class="panel">
+  <p>
+    <div class="column">
+      <img src="https://letplaykabaddi.weebly.com/uploads/1/3/1/9/131987586/kabaddi-sports-a-d_orig.jpg" 
+      height="250" width="200" alt="kabaddi" style="width:80%"></img>
+    </div>
+      
+    Ancient era
+    Origins of Kabaddi are not clearly understood. There are various theories regarding its 
+    place and time of origin. The sport is said to have existed in the Indian subcontinent 
+    since prehistoric times.<br>
+    
+    Rononjoy Sen speculates in his book Nation At Play, that kabaddi originated during the Vedic 
+    period (between 1500 BC and 500 BC). There are accounts of Gautama Buddha and Lord Krishna 
+    having played an ancient form of the sport.<br>
+    
+    According to another version of the sport's origins, kabaddi originated in Tamil Nadu. It was reportedly common among the Ayar tribal people who lived in the Mullai geographical region of ancient Tamil Nadu. [14][15]
+    
+    There are also accounts of kabaddi having been played in Iran 2,000 years ago.<br>
+    
+    Modern era
+    Modern kabaddi is a synthesis of the game played in various forms under different names in the 
+    Indian subcontinent. India has been first credited with having helped to popularise kabaddi as a 
+    competitive sport, with the first organized competitions occurring in the 1920s, their introduction 
+    to the programme of the Indian Olympic Games in 1938, the establishment of the All-India Kabaddi 
+    Federation in 1950, and it being played as a demonstration sport at the inaugural 1951 Asian 
+    Games in New Delhi. These developments helped to formalize the sport, which had traditionally been 
+    played on muddy surfaces in villages, for legitimate international competition.<br>
+    
+    The first framework of rules for the sport was prepared in Maharashtra in the 1920s, with 
+    English sports serving as a model for this formalisation. One of the earliest modern 
+    tournaments of the sport, the All India Kabaddi Tournament in 1923, was played according 
+    to these amended rules. After being demonstrated again at the 1982 Asian Games in Delhi, 
+    Kabaddi was added to the Asian Games programme beginning in 1990.<br>
+    
+    The advent of the Pro Kabaddi League (PKL) in 2014 revolutionised the standard style of the sport, 
+    with various rule changes being made; for example, whereas previously raids had no time limit, 
+    the PKL rules introduced the concept of a standard 30-second time limit for every raid.<br></p>
+</div>
+
+<button class="accordion"><li>Laws and gameplay</li> </button>
+<div class="panel">
+  <div class="column">
+    <img src="https://www.wikihow.com/images/thumb/3/3f/Play-Kabaddi-Step-2-Version-2.jpg/aid3110802-v4-728px-Play-Kabaddi-Step-2-Version-2.jpg.webp" 
+    height="250" width="200" alt="kabaddi" style="width:80%"></img>
+  </div>
+  <p>
+    <ul>
+    <li>Each team shall consist of no more than 12 players with only 7 taking to the field at any one time.</li><br>
+    <li>Because of the physical nature of Kabaddi, matches are categorized in age and weight categories.</li><br>
+    <li>There are six officials looking after each Kabaddi match. The officials comprise of a referee, a scorer, 
+    two assistant scorers and two umpires.</li><br>
+    <li>The duration of the match is two halves of 20 minutes with a half time break of 5 minutes.<br>
+    At the start of a Kabaddi match, there is a coin toss with the winner having the choice as to whether 
+    to have the first raid or not.</li><br>
+    <li> In the second half of the match, the team that did not raid first shall 
+    begin the second half with a raid.</li><br>
+    <li>To win a point when raiding, the raider must take a breath and run into the opposition’s half and tag 
+    one or more members of the opposing team and then return to their own half of the pitch before inhaling again.<br>
+    To prove that another breath hasn’t been taken, the rider must continue to repeatedly yell the word 
+    ‘Kabaddi’.</li><br>
+    <li> Failure to do this, even for just a moment means that the rider must return to their own side 
+    of the court without points and the opposite team is awarded a point for a successful defense play.</li><br>
+    <li>The team being raided is defending, and the players must prevent the raiders from tagging them and returning 
+    back over the halfway line.</li><br>
+    <li>Whilst in defence, a team may score a point by successfully preventing the raider 
+    returning to their own half after tagging them.</li><br>
+    <li>Raiders may only be grabbed by their limbs or torso, not by 
+    their hair, clothes or anywhere else, and defenders are not permitted to cross the centre line.<br>
+    Each team will take turns in raiding and defending.</li><br>
+    <li>Following halftime, the two teams switch sides of the 
+    court and the team who defended first in the first half begin the second half by raiding.</li><br>
+    <li>The game continues in this way until the time is up, the team with the most points at the end of the match 
+    is declared the winner.</li><br>
+    </ul>
+    <br></p>
+</div>
+
+<button class="accordion"> <li>Major competition </li></button>
+<div class="panel">
+  <div class="column">
+    <img src="https://images.indianexpress.com/2016/10/kabaddiworldcupteams-m.jpg?w=728" 
+    height="250" width="200" alt="kabaddi" style="width:80%" ></img>
+  </div>
+  <p><b>Kabaddi World Cup</b><br><br>
+    The Kabaddi World Cup is an outdoor international standard style kabaddi competition conducted by the 
+    International Kabaddi Federation (IKF), contested by men's and women's national teams. <br><br>The competition 
+    has been previously contested in 2004, 2007 and 2016. All the tournaments have been won by India. 
+    India defeated Iran by 38–29 in the final of the championship game to clinch the title of 2016.<br><br>
+    
+    After the establishment of a new kabaddi organization named World Kabaddi Federation,
+    a 2019 Kabaddi World Cup was held in April 2019 at Malacca, Malaysia. It was the largest 
+    world cup in kabaddi history, consisting of 32 men's teams and 24 women's teams.
+    <br><br><br><hr><br><br><br>
+    <div class="column">
+      <img src="https://img.jagranjosh.com/images/2023/November/25112023/VIVO-Pro-Kabaddi-2022.webp" 
+      height="250" width="200" alt="kabaddi" style="width:80%" ></img>
+    </div>
+    <b>Pro Kabaddi League</b><br><br>
+
+    The Pro Kabaddi League was established in 2014. The league modeled its business upon that of the 
+    Indian Premier League of Twenty20 cricket, with a large focus on marketing, the backing of local 
+    broadcaster Star Sports. The Pro Kabaddi League quickly became a ratings success on Indian 
+    television; the 2014 season was watched by at least 435 million viewers over the course of the season, 
+    and the inaugural championship match was seen by 98.6 million viewers.<br>
+    
+    Bengal Warriors, Bengaluru Bulls, Patna Pirates, Tamil Thalaivas, UP Yoddhas, Gujrat Giants, 
+    Haryana Steelers, Puneri Paltan, U Mumba, Jaipur Pink Panthers, Dabang Delhi KC, and Telugu 
+    Titans are the 12 teams that play in the Pro Kabaddi League.<br>
+    
+    The organisers of the Pro Kabaddi League change the sport's rules and its presentation to make it 
+    more suitable for a television audience. All players in the league must be strictly under 85 kg in weight. 
+    When the raider scores 10 or more raid points in a single match, it is called a super 10, and they earn 
+    an extra point. If the defender successfully manages to tackle the five raiders in a single game, 
+    it is a high 5, and the team will be awarded one extra point.<br>
+    
+    Additional rules are used in the Pro Kabaddi League to encourage scoring: when a defensive side has three or fewer players remaining, tackles are worth two points instead of one. Furthermore, if a team performs two empty raids in a row, the next raider must score a point ("do-or-die raid"), or else they will be declared out and the opposing team will score a point.
+  
+  
+  
+  
+  
+  
+  </p>
+  <br><br><br><br>
+</div>
+</ul>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+    
+ 
+    <footer>
+        <p>© 2024 Sport's site. All Rights Reserved.</p>
+    </footer>
+</body>
+ 
+</html>

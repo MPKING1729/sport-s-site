@@ -1,0 +1,261 @@
+<html>
+ 
+<head>
+    <title> News </title>
+    <link rel="icon" type="image/x-icon" href="photo's/logo1.jpg">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+/* Header */
+ 
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #40b736;
+}
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li {
+    margin-right: 20px;
+}
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: #40b736;
+    border-radius: 4px;
+    color: white;
+}
+ 
+/* About Section */
+ 
+.about {
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+    padding: 100px 0 20px 0;
+   }
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}
+ 
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #40b736;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+ 
+button:hover {
+    background-color: #1f9405;
+}
+ 
+/* Team Section */
+ 
+.team {
+    padding: 30px 0;
+    text-align: center;
+}
+ 
+.team h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+ 
+@media (max-width: 650px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+ 
+    .nav-links li {
+        margin-right: 0;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+ 
+    .team {
+        margin: 0 1rem;
+    }
+}
+
+
+
+
+</style>
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="photo's/logo1.jpg" height="25" width="35">&nbsp;SPORT'S SITE
+              </div>
+            <ul class="nav-links">
+                <li><a href="index.html">
+                  back</a>
+                  </li>
+                <li><a href="index.html">
+                  Home</a>
+                  </li>
+                <li><a href="about us.html">
+                  About</a>
+                  </li>
+                <li><a href="news.html">
+                  News</a>
+                  </li>
+                <li><a href="Contact us webpage.html">
+                  Contact</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="about">
+        <h1 style="color: red; font-size: 42px;text-align:center;"> LATEST NEWS <H1><center><br><br>
+        <p style="font-weight: bold">
+          </p>
+        <div class="row">
+            <div class="column">
+               <a href="https://timesofindia.indiatimes.com/sports/badminton/pv-sindhu-goes-down-to-an-se-young-in-all-england-
+championships-second-round/articleshow/108498877.cms"> <img src="https://static.toiimg.com/thumb/msid-108498962,imgsize-50382,width-400,
+resizemode-4/108498962.jpg" alt="Sport's site" 
+                           style="width:100%" vspace="60" hspace="60">PV Sindhu goes down to An Se Young in All England Championsh ..</img>
+
+            </div>
+
+             <div class="column">
+                <a href="https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/csks-post-shows-why-age-is-just-a-number-for-
+ms-dhoni/articleshow/108499714.cms"> <img src="https://static.toiimg.com/thumb/msid-108499724,imgsize-72646,width-400,resizemode-4/108499724.jpg" alt="Sport's site" 
+                           style="width:100%" vspace="60" hspace="60">'Could keep...': CSK's post shows why age is just a number for MS Dhoni</img></a>
+
+            </div>
+             <div class="column">
+               <a href="https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2024-challenges-ahead-for-hardik-pandya
+-pat-cummins-and-shubman-gill-as-new-captains/articleshow/108631399.cms"> <img src="https://static.toiimg.com/thumb/msid-108633202,imgsize-76684,
+width-400,resizemode-4/108633202.jpg" alt="Sport's site" 
+                           style="width:100%" vspace="60" hspace="60">IPL 2024: Challenges ahead for Hardik Pandya, Pat Cummins and Shubman Gill as new captains</img></a>
+
+            </div>
+
+             <div class="column">
+              <a href="https://timesofindia.indiatimes.com/sports/football/top-stories/liverpool-sail-into-europa-league-quarterfinals-
+leverkusen-win-with-stoppage-time-goals/articleshow/108519414.cms"> <img src="https://static.toiimg.com/thumb/msid-108519509,imgsize-
+71246,width-400,resizemode-4/108519509.jpg" alt="Sport's site" 
+                           style="width:100%" vspace="60" hspace="60">Liverpool sail into Europa League quarterfinals, Leverkusen win with stoppage-time goals</img>
+
+            </div>
+            
+            <div>
+            <p style="font-size:17px"></p>
+            </div>
+        </div>
+    </section>
+    
+ 
+    <footer>
+        <p>© 2024 Sport's site. All Rights Reserved.</p>
+    </footer>
+</body>
+ 
+</html>

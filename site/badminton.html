@@ -1,0 +1,440 @@
+<html>
+ 
+<head>
+    <title>Badminton</title>
+    <link rel="icon" type="image/x-icon" href="photo's/logo1.jpg">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 95%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+/* Header */
+ 
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+ 
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #40b736;
+}
+ 
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li {
+    margin-right: 20px;
+}
+ 
+.nav-links a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.nav-links a:hover {
+    background-color: #40b736;
+    border-radius: 4px;
+    color: white;
+}
+ 
+/* About Section */
+ .about {
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+
+img {
+  border: 12px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}
+ 
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #40b736;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+ 
+button:hover {
+    background-color: #1f9405;
+}
+ 
+/* Team Section */
+ 
+.team {
+    padding: 30px 0;
+    text-align: center;
+}
+ 
+.team h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+ 
+@media (max-width: 650px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+ 
+    .nav-links li {
+        margin-right: 0;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+ 
+    .team {
+        margin: 0 1rem;
+    }
+}
+
+
+
+
+</style>
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+              <img src="photo's/logo1.jpg" height="25" width="35">&nbsp;SPORT'S SITE
+              </div>
+            <ul class="nav-links">
+                <li><a href="index.html">
+                  Back</a>
+                <li><a href="index.html">
+                  Home</a>
+                  </li>
+                <li><a href="about us.html">
+                  About</a>
+                  </li>
+                <li><a href="news.html">
+                  News</a>
+                  </li>
+                <li><a href="Contact us webpage.html">
+                  Contact</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="about">
+        <h1 align="center">BADMINTON</H1><center><br><br>
+        <p style="font-weight: bold">
+          </p>
+        <div class="row">
+            <div class="column">
+                <img src="photo's/badminton.jpg" alt="Badminton" style="width:80%" vspace="60" hspace="60">
+            </div>
+            <div>
+            <p style="font-size:16px">Badminton is a racquet sport played using racquets to hit a shuttlecock <br>
+              across a net. Although it may be played with larger teams, the most common forms of the <br>game are 
+              "singles" (with one player per side) and "doubles" (with two players per side). Badminton is often 
+              played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular 
+              indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within 
+              the other team's half of the court.<br><br>
+
+              Each side may only strike the shuttlecock once before it passes over the net. 
+              Play ends once the shuttlecock has struck the floor or ground, or if a fault has 
+              been called by the umpire, service judge, or (in their absence) the opposing side.<br><br>
+              
+              The shuttlecock is a feathered or (in informal matches) plastic projectile that flies 
+              differently from the balls used in many other sports. In particular, the feathers create 
+              much higher drag, causing the shuttlecock to decelerate more rapidly. Shuttlecocks also 
+              have a high top speed compared to the balls in other racquet sports. The flight of the 
+              shuttlecock gives the sport its distinctive nature, and in certain languages, e.g. German, 
+              the sport is named by reference to this feature i.e. Federball, literally feather-ball.<br><br>
+              
+              The game developed in British India from the earlier game of battledore and shuttlecock. 
+              European play came to be dominated by Denmark but the game has become very popular in Asia, 
+              with recent competitions dominated by China. In 1992, badminton debuted as a Summer Olympic 
+              sport with four events: men's singles, women's singles, men's doubles, and women's doubles; 
+              mixed doubles was added four years later. At high levels of play, the sport demands excellent 
+              fitness: players require aerobic stamina, agility, strength, speed, and precision. It is also 
+              a technical sport, requiring good motor coordination and the development of sophisticated racquet 
+              movements involving much greater flexibility in the wrist than some other racquet sports.<br><br>
+</p>
+            </div>
+        </div>
+    </section>
+
+<ul>
+<button class="accordion"> <li> History </li></button>
+<div class="panel">
+  <p>
+    <div class="column">
+      <img src="https://psmsitev1.wpenginepowered.com/wp-content/uploads/2020/10/The-game-was-played-by-elite-groups.jpg" 
+      height="250" width="200" alt="Badminton" style="width:80%"></img>
+    </div>
+      
+    Games employing shuttlecocks have been played for centuries across Eurasia, 
+    but the modern game of badminton developed in the mid-19th century among the expatriate 
+    officers of British India as a variant of the earlier game of battledore and shuttlecock. 
+    ("Battledore" was an older term for "racquet".) Its exact origin remains obscure. The name 
+    derives from the Duke of Beaufort's Badminton House in Gloucestershire, but why or when
+    remains unclear. As early as 1860, a London toy dealer named Isaac Spratt published a booklet
+    entitled Badminton Battledore – A New Game, but no copy is known to have survived.An 1863 
+    article in The Cornhill Magazine describes badminton as "battledore and shuttlecock played with sides, 
+    across a string suspended some five feet from the ground".<br><br>
+
+The game originally developed in India among the British expatriates,
+where it was very popular by the 1870s.[6] Ball badminton, a form of the game played with a wool ball 
+instead of a shuttlecock, was being played in Thanjavur as early as the 1850s[9] and was at first 
+played interchangeably with badminton by the British, the woollen ball being preferred in windy or wet weather.
+
+Early on, the game was also known as Poona or Poonah after the garrison town of Poona (Pune), 
+where it was particularly popular and where the first rules for the game were drawn up in 1873. 
+By 1875, officers returning home had started a badminton club in Folkestone. Initially, the sport 
+was played with sides ranging from 1 to 4 players, but it was quickly established that games between 
+two or four competitors worked the best. The shuttlecocks were coated with India rubber and, in 
+outdoor play, sometimes weighted with lead. Although the depth of the net was of no consequence, 
+it was preferred that it should reach the ground.<br>
+
+The sport was played under the Pune rules until 1887, when J. H. E. Hart of the Bath Badminton Club 
+drew up revised regulations. In 1890, Hart and Bagnel Wild again revised the rules. 
+The Badminton Association of England (BAE) published these rules in 1893 and officially 
+launched the sport at a house called "Dunbar" in Portsmouth on 13 September. 
+The BAE started the first badminton competition, the All England Open Badminton Championships 
+for gentlemen's doubles, ladies' doubles, and mixed doubles, in 1899. 
+Singles competitions were added in 1900 and an England–Ireland championship match appeared in 1904.<br><br>
+
+England, Scotland, Wales, Canada, Denmark, France, Ireland, the Netherlands, and New Zealand were 
+the founding members of the International Badminton Federation in 1934, now known as the Badminton 
+World Federation.[13] India joined as an affiliate in 1936. The BWF now governs international badminton. 
+Although initiated in England, competitive men's badminton has traditionally been dominated in Europe 
+by Denmark. Worldwide, Asian nations have become dominant in international competition. China, Denmark, 
+Indonesia, Malaysia, India, South Korea, Taiwan (playing as 'Chinese Taipei') and Japan are the nations 
+which have consistently produced world-class players in the past few decades, with China being the 
+greatest force in men's and women's competition recently. Great Britain, where the rules of the 
+modern game were codified, is not among the top powers in the sport, but has had significant 
+Olympic and World success in doubles play, especially mixed doubles.<br>
+
+The game has also become a popular backyard sport in the United States<br><br></p>
+</div>
+
+<button class="accordion"><li>Laws and gameplay</li> </button>
+<div class="panel">
+  <div class="column">
+    <img src="https://www.wikihow.com/images/thumb/3/3f/Play-Kabaddi-Step-2-Version-2.jpg/aid3110802-v4-728px-Play-Kabaddi-Step-2-Version-2.jpg.webp" 
+    height="250" width="200" alt="Badminton" style="width:80%"></img>
+  </div>
+  <p>
+    <h3>court</h3>
+    The court is rectangular and divided into halves by a net. 
+    Courts are usually marked for both singles and doubles play, 
+    although badminton rules permit a court to be marked for singles only. 
+    The doubles court is wider than the singles court, but both are of the same length. 
+    The exception, which often causes confusion to newer players, is that the doubles 
+    court has a shorter serve-length dimension.<br><br>
+
+   The full width of the court is 6.1 metres (20 feet), and in singles this width is reduced to 5.18 metres 
+   (17.0 feet). The full length of the court is 13.4 metres (44 feet). The service courts are marked by a 
+   centre line dividing the width of the court, by a short service line at a distance of 1.98 metres 
+   (6 feet 6 inches) from the net, and by the outer side and back boundaries. In doubles, the service 
+   court is also marked by a long service line, which is 0.76 metres (2 feet 6 inches) from the back boundary.<br><br>
+
+   The net is 1.55 metres (5 feet 1 inch) high at the edges and 1.524 metres (5.00 feet) high in the centre. 
+   The net posts are placed over the doubles sidelines, even when singles is played.
+
+   The minimum height for the ceiling above the court is not mentioned in the Laws of Badminton. Nonetheless, 
+   a badminton court will not be suitable if the ceiling is likely to be hit on a high serve.<br><br>
+     
+   <div class="column">
+    <img src="https://assets-global.website-files.com/5b44edefca321a1e2d0c2aa6/6004bbea9e0458627a47c112_Dimensions-Sports-Badminton-Badminton-Serve-OG.jpg" 
+    height="250" width="200" alt="Badminton" style="width:80%"></img>
+  </div>
+   <h3>serving</h3>
+   When the server serves, the shuttlecock must pass over the short service line on the opponents' 
+   court or it will count as a fault. The server and receiver must remain within their service courts, 
+   without touching the boundary lines, until the server strikes the shuttlecock. The other two players 
+   may stand wherever they wish, so long as they do not block the vision of the server or receiver.
+
+At the start of the rally, the server and receiver stand in diagonally opposite service courts 
+(see court dimensions). The server hits the shuttlecock so that it would land in the receiver's service court. 
+This is similar to tennis, except that in a badminton serve the whole shuttle must be below 1.15 metres 
+from the surface of the court at the instant of being hit by the server's racket, the shuttlecock is not 
+allowed to bounce and in badminton, the players stand inside their service courts, unlike tennis.
+
+When the serving side loses a rally, the server immediately passes to their opponent(s) 
+(this differs from the old system where sometimes the serve passes to the doubles partner 
+for what is known as a "second serve").
+
+In singles, the server stands in their right service court when their score is even, and in 
+their left service court when their score is odd.
+
+In doubles, if the serving side wins a rally, the same player continues to serve, but he/she 
+changes service courts so that she/he serves to a different opponent each time. If the opponents 
+win the rally and their new score is even, the player in the right service court serves; if odd, 
+the player in the left service court serves. The players' service courts are determined by their 
+positions at the start of the previous rally, not by where they were standing at the end of the rally. 
+A consequence of this system is that each time a side regains the service, the server will be the player 
+who did not serve last time.<br><br>
+
+<h3>let's</h3>
+If a let is called, the rally is stopped and replayed with no change to the score. 
+Lets may occur because of some unexpected disturbance such as a shuttlecock landing 
+on a court (having been hit there by players playing in adjacent court) or in small 
+halls the shuttle may touch an overhead rail which can be classed as a let.
+
+If the receiver is not ready when the service is delivered, a let shall be called; 
+yet, if the receiver attempts to return the shuttlecock, the receiver shall be judged to have been ready.
+
+    <br></p>
+</div>
+
+<button class="accordion"> <li>Major competition </li></button>
+<div class="panel">
+  <ul>
+<p><br>
+  
+  The championships are locally now referred to as the All Indian National Badminton Championships. 
+  The National titles in India are the following: <br>
+  &nbsp;<li>Men's Singles: Vikas Topiwala Challenge Cup.</li> 
+  &nbsp;<li>Women's Singles: Olympian Badminton Challenge Cup.</li>
+  
+  <br><br>
+  </p></ul><br><br>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+    
+ 
+    <footer>
+        <p>© 2024 Sport's site. All Rights Reserved.</p>
+    </footer>
+</body>
+ 
+</html>
